@@ -5,7 +5,7 @@ const Featured = () => {
   const { data, loading, error } = useFetch(
     "http://localhost:5000/api/hotels/countByCity?cities=koftown,Accra,Kumasi"
   );
-  console.log(data);
+
   return (
     <div className="featured">
       {loading ? (
